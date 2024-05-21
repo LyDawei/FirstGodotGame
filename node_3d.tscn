@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://crg4ibvscx1xq"]
+
+[ext_resource type="PackedScene" uid="uid://clr2rxswfrpqk" path="res://Limo.glb" id="1_jhv52"]
+[ext_resource type="Script" path="res://Limo.gd" id="2_kd685"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Limo" parent="." instance=ExtResource("1_jhv52")]
+script = ExtResource("2_kd685")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.931164, 0.364601, 0, -0.364601, 0.931164, 0, 2.75199, 4.2094)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.39227, 0)
